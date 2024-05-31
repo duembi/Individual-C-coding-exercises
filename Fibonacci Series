@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(){
+	
+	int i, step_number, first_number, second_number, third_number;
+	
+	first_number = 1;
+	second_number = 1;
+	printf("Please enter step number : ");
+	scanf("%d", &step_number);
+	
+	printf("%d %d ", first_number, second_number);
+	
+	for(i=0; i<step_number-2; i++){
+		
+		third_number = first_number + second_number;
+		first_number = second_number;
+		second_number = third_number;
+	
+		
+		printf("%d ", third_number);
+		
+	}
+	
+	
+}fibonacci series
