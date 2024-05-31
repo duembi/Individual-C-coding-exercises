@@ -1,0 +1,25 @@
+#include<stdio.h>
+int x = 21;
+
+void increase(){
+
+	x++;
+	
+}
+
+void decrease(){
+	
+	x--;
+	
+}
+
+int main(){
+
+	printf("x = %d\n", x);
+	increase();	
+	printf("x = %d\n", x);
+	decrease();
+	decrease();
+	printf("x = %d\n", x);
+}
+
