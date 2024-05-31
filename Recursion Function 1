@@ -1,0 +1,28 @@
+#include<stdio.h>
+
+int SumNumber(int i){
+	
+	if(i>0){
+		
+		return i + SumNumber(i-1);
+		
+	}
+	else{
+		
+		return 0;
+		
+	}
+}
+
+int main(){
+	
+	int x,result;
+	
+	printf("Please enter a number :");
+	scanf("%d", &x);
+	
+	result = SumNumber(x);
+	printf("Sum of the numbers : %d", result);
+	
+}
+
