@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+void natural_function(int x){
+	
+	if(x > -1){
+		
+		natural_function(x-1);
+		printf("%d ", x);
+		
+	}
+	
+	
+}
+
+int main(){
+	
+	int x;
+	
+	printf("please enter a number : ");
+	scanf("%d", &x);	
+	
+	natural_function(x);
+	
+}
