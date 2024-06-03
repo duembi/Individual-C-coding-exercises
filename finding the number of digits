@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int natural_function(int x) {
+    if (x == 0) {
+        return 0; 
+    } 
+	else {
+        return 1 + natural_function(x/10); 
+    }
+}
+
+int main(){
+	
+	int x;
+	
+	printf("please enter a number : ");
+	scanf("%d", &x);	
+	
+	printf("Digit num : %d",natural_function(x));
+	
+}
