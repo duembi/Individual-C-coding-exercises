@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int natural_function(int x) {
+    if (x == 0) {
+        return 0; 
+    } 
+	else {
+        return x + natural_function(x-1); 
+    }
+}
+
+int main(){
+	
+	int x;
+	
+	printf("please enter a number : ");
+	scanf("%d", &x);	
+	
+	printf("Sum : %d",natural_function(x));
+	
+}
